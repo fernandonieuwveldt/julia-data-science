@@ -42,6 +42,7 @@ RUN ln -s /usr/local/cuda/lib64/stubs/libcuda.so /usr/local/cuda/lib64/stubs/lib
 ENV JULIA_PATH /usr/local/julia
 ENV PATH $JULIA_PATH/bin:$PATH
 
+# taken from the official julia lang docker image
 # # use local cuda installation and not artifact
 ENV JULIA_CUDA_USE_BINARYBUILDER false
 
